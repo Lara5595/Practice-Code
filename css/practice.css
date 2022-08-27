@@ -1,3 +1,13 @@
 * {
     background-color: antiquewhite;
 }
+
+#section {
+    background-color: azure;
+    border: black 1px solid;
+}
+
+#headings {
+    background-color: azure;
+    border: black 1px solid;
+}
