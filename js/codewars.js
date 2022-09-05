@@ -23,3 +23,9 @@ function firstNonConsecutive (arr) {
 
 console.log(firstNonConsecutive);
 // end of question
+
+// 3rd question
+function getChar(c){
+    return String.fromCharCode(c);
+}
+// End of third

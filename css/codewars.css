@@ -28,3 +28,11 @@ body {
     font-family: Helvetica;
     color: black;
 }
+
+.ASCII {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+}
