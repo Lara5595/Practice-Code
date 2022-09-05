@@ -1,0 +1,17 @@
+.title {
+    text-align: center;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+
+.kyu {
+    text-decoration: underline;
+}
+
+.answer {
+    border: 1px black solid;
+    width: 90%;
+    padding-left: 1em;
+    background-color: #f5f8ff;
+}
