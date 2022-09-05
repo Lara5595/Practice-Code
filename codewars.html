@@ -8,7 +8,9 @@
 </head>
 <body>
 <h1 class="title"> Codewars</h1>
+<!--First question-->
 <h2 class="kyu">8Kyu</h2>
+<h3> Return hello world!</h3>
 <p class="problem">Make a simple function called greet that returns the most-famous "hello world!".</p>
 <div class="answer">
     <p>// Write a function "greet" that returns "hello world!" <br>
@@ -18,7 +20,33 @@
         }
     </p>
 </div>
+<br>
+<!--end of first question -->
 
+<!--2nd question-->
+<h3>Find the first non-consecutive number</h3>
+<p class="problem">Your task is to find the first element of an array that is not consecutive.
+
+    By not consecutive we mean not exactly 1 larger than the previous element of the array.
+
+    E.g. If we have an array [1,2,3,4,6,7,8] then 1 then 2 then 3 then 4 are all consecutive but 6 is not, so that's the first non-consecutive number.
+
+    If the whole array is consecutive then return null2.
+
+    The array will always have at least 2 elements1 and all elements will be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive or negative and the first non-consecutive could be either too! </p>
+<div class="answer">
+    <p> function firstNonConsecutive (arr) { <br>
+        for (let i=0; i < arr.length -1; i++) { <br>
+        let curr = arr[i]; <br>
+        let next = arr[i + 1]; <br>
+
+        if (curr + 1 !== next) { <br>
+        return next; <br>
+        } <br>
+        } <br>
+        return null; <br>
+        } </p>
+</div>
 
 
 <script src="js/codewars.js"></script>
