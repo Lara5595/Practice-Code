@@ -37,10 +37,12 @@
 <div class="answer">
     <p> function firstNonConsecutive (arr) { <br>
         for (let i=0; i < arr.length -1; i++) { <br>
+        // the for loop, loops through the numbers <br>
         let curr = arr[i]; <br>
         let next = arr[i + 1]; <br>
-
+        // create two var one for the current loop and the other one to find the number that skips <br>
         if (curr + 1 !== next) { <br>
+        //if the current loop [1-8] is not != to the next loop [ 1,2,3,5]<br>
         return next; <br>
         } <br>
         } <br>
@@ -50,5 +52,7 @@
 
 
 <script src="js/codewars.js"></script>
+<br>
+<a href="/codewars7kyu.html"> 7 Kyu</a>
 </body>
 </html>
