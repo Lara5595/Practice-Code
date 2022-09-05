@@ -62,8 +62,24 @@
     <a class="ASCII" href="https://www.asciitable.com/" target="_blank"> ASCII Table</a>
 
 </div>
+<!--end of 3rd question-->
 
+<h3>Simple Fun #1: Seats in Theater</h3>
+<p class="problem">Your friend advised you to see a new performance in the most popular theater in the city. He knows a lot about art and his advice is usually good, but not this time: the performance turned out to be awfully dull. It's so bad you want to sneak out, which is quite simple, especially since the exit is located right behind your row to the left. All you need to do is climb over your seat and make your way to the exit.<br>
+    The main problem is your shyness: you're afraid that you'll end up blocking the view (even if only for a couple of seconds) of all the people who sit behind you and in your column or the columns to your left. To gain some courage, you decide to calculate the number of such people and see if you can possibly make it to the exit without disturbing too many people.<br>
+    Given the total number of rows and columns in the theater (nRows and nCols, respectively), and the row and column you're sitting in, return the number of people who sit strictly behind you and in your column or to the left, assuming all seats are occupied.<br>
+   <strong> Example
+       For nCols = 16, nRows = 11, col = 5 and row = 3, the output should be <br>
+       seatsInTheater(nCols, nRows, col, row) === 96
+   </strong></p>
 
+    <div class="answer fixed" >
+        <p>function seatsInTheater(nCols, nRows, col, row) { <br>
+            return (nCols - col + 1) * (nRows - row); <br>
+            <br>
+            }</p>
+        <img  class="theater" src="img/blob.png" alt="theater seats" width="200" height="150">
+    </div>
 <script src="js/codewars.js"></script>
 <br>
 <a class="other" href="/codewars7kyu.html" target="_blank"> 7 Kyu</a>

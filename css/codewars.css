@@ -29,10 +29,22 @@ body {
     color: black;
 }
 
+.fixed {
+    height: 180px;
+}
+
+
 .ASCII {
     text-decoration: underline;
 }
 
 a:hover {
     color: black;
+}
+
+.theater {
+    position: relative;
+    left: 30em;
+    bottom: 6.5em;
+
 }
