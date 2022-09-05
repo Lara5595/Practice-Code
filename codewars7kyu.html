@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Codewars 7kyu</title>
+    <link rel="stylesheet" href="css/codewars.css">
 
 </head>
 <body>
 <h1 class="title">7KYU</h1>
+
+<h3>No oddities here</h3>
+<p class="problem"> Write a small function that returns the values of an array that are not odd.<br>
+    All values in the array will be integers. Return the good values in the order they are given.</p>
+<div class="answer">
+    <p>function noOdds( values ){ <br>
+        let arr = []; <br>
+
+        for(let i=0; i < values.length; i++) { <br>
+        if (values[i] % 2 ===0) { <br>
+        arr.push(values[i]); <br>
+        }<br>
+        }<br>
+        return arr; <br>
+        } <br> or <br>
+         return values.filter(val => val & 2 === 0;)
+    </p>
+</div>
+
 </body>
 </html>
