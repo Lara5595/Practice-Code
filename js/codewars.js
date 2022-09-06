@@ -6,7 +6,6 @@ function greet(message) {
 console.log("Hello my name is david and " + greet());
 console.log(greet());
 
-// end of first question
 
 // second question
 function firstNonConsecutive (arr) {
@@ -22,10 +21,23 @@ function firstNonConsecutive (arr) {
 }
 
 console.log(firstNonConsecutive);
-// end of question
 
 // 3rd question
 function getChar(c){
     return String.fromCharCode(c);
 }
-// End of third
+
+// 4th question
+function seatsInTheater(nCols, nRows, col, row) {
+    return (nCols - col + 1) * (nRows - row);
+
+}
+
+// 5th question
+function checkForFactor (base, factor) {
+    if (base % factor === 0) {
+        return true
+    } else {
+        return false;
+    }
+}
