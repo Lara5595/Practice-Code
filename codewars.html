@@ -103,6 +103,35 @@
             return base % factor === 0; <br>
             }</p>
     </div>
+
+<!-- 6th question-->
+<h3>Reversed Words</h3>
+<p class="problem"> Complete the solution so that it reverses all of the words within the string passed in.<br>
+    Example(Input --> Output): <br>
+    "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
+</p>
+<div class="answer">
+    <p>function reverseWords(str){ <br>
+    let splitString = str.split(" "); <br>
+    let reverseArray = splitString.reverse(); <br>
+    let joinArray = reverseArray.join(" "); <br>
+        return joinArray; <br>
+    } <br>
+
+    intructions :  <br>
+        // Step 1 use the split() method to return the new array <br>
+        // Step 2. Use the reverse() method to reverse the new created array <br>
+        // Step 3. Use the join() method to join all elements of the array into <br>
+        // Step 4. Retrun the reverse string <br>
+        return joinArray; // reverse those words <br>
+        or <br>
+        function reverseWords(str){ <br>
+        return str.split(' ').reverse().join(' '); <br>
+        }
+    </p>
+
+</div>
+
 <script src="js/codewars.js"></script>
 <br>
 <a class="other" href="/codewars7kyu.html" target="_blank"> 7 Kyu</a>

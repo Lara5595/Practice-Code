@@ -41,3 +41,9 @@ function checkForFactor (base, factor) {
         return false;
     }
 }
+
+// 6th question
+
+function reverseWords(str){
+    return str.split(' ').reverse().join(' ');
+}
