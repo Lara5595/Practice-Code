@@ -67,3 +67,23 @@ function reverseString(str) {
     return joinArray; // "olleh"
 }
 
+
+
+function firstNonConsecutive (arr) {
+    for (let i=0; i < arr.length -1; i++) {
+// the for loop, loops through the numbers
+        let curr = arr[i];
+        let next = arr[i + 1];
+// create two var one for the current loop and the other one to find the number that skips
+        if (curr + 1 !== next) {
+//if the current loop [1-8] is not != to the next loop [ 1,2,3,5]
+            return next;
+        }
+    }
+    return null;
+}
+
+// button function
+function revealMessage() {
+document.getElementById("hiddenMessage").style.display = "block"
+}
