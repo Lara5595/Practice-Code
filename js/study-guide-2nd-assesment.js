@@ -19,14 +19,14 @@ function checkType(input, feature) {
 // -- Write a function that takes in an input, does something to it, and returns the modified data (do a mathematical operation on it, do a string method to modify it, use an array method to modify an array)
 
 // doubles a number with a mathematical equation
-function doubleNumber(number){
+    function doubleNumber(number){
     return number * 2
-}
+    }
 
 // do a string method to modify it
-function upperCase(string) {
+    function upperCase(string) {
     return string.toUpperCase();
-};
+    };
 
     function repeatString(string) {
         return string.concat(' ', string);
@@ -34,14 +34,14 @@ function upperCase(string) {
 
 
     // use an array method to modify the array
-const myArray = [1,3,5,7,9,11];
+    const myArray = [1,3,5,7,9,11];
 
-function removeFirstElement(array) {
+    function removeFirstElement(array) {
     array.shift();
     return array;
-}
+    }
 
-function moveFirstToLast(array) {
+    function moveFirstToLast(array) {
     let firstElement = array.shift();
     array.push(firstElement)
     return array;
@@ -105,6 +105,46 @@ function moveFirstToLast(array) {
      *    ]) ➞ [5, 5, 4]
      */
 
+
+    const students = [
+    {
+        id: 1,
+        name: "Jacek",
+        notes: [5, 3, 4, 2, 5, 5]
+    },
+    {
+        id: 2,
+        name: "Ewa",
+        notes: [2, 3, 3, 3, 2, 5]
+    },
+    {
+        id: 3,
+        name: "Zygmunt",
+        notes: [2, 2, 4, 4, 3, 3]
+    }
+]
+
+    // function getStudentTopNotes(arrayOfStudentObjects) {
+    //     const topNotes = [];
+    //     arrayOfStudentObjects.forEach(studentObject => {
+    //         topNotes.push(Math.max(...studentObject.notes));
+    //     });
+    //     return topNotes;
+    // }
+    // or
+    function getStudentTopNotes(arrayOfStudentsObjects) {
+        let topNotes = [];
+        for (let i = 0 ; i < arrayOfStudentsObjects.length; i++) {
+            let topNote = arrayOfStudentsObjects[i].notes[0];
+            for (let j = 0; j <arrayOfStudentsObjects[i].notes.length; j++){
+                if (arrayOfStudentsObjects[i].notes[j] > topNote) {
+                    topNote = arrayOfStudentsObjects[i].notes[j];
+                }
+            }
+            topNotes.push(topNote);
+        }
+        return topNotes;
+    }
 
 
     /**
