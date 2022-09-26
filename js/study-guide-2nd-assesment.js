@@ -16,13 +16,37 @@ function checkType(input, feature) {
 }
 
 
-
-
 // -- Write a function that takes in an input, does something to it, and returns the modified data (do a mathematical operation on it, do a string method to modify it, use an array method to modify an array)
-//
-function modifyData(input, change) {
 
+// doubles a number with a mathematical equation
+function doubleNumber(number){
+    return number * 2
 }
+
+// do a string method to modify it
+function upperCase(string) {
+    return string.toUpperCase();
+};
+
+    function repeatString(string) {
+        return string.concat(' ', string);
+    };
+
+
+    // use an array method to modify the array
+const myArray = [1,3,5,7,9,11];
+
+function removeFirstElement(array) {
+    array.shift();
+    return array;
+}
+
+function moveFirstToLast(array) {
+    let firstElement = array.shift();
+    array.push(firstElement)
+    return array;
+}
+
 // -- Write a function that takes in an array and returns the array modified in some way -- certain elements removed, certain elements modified in a regular way (example, every numerical value doubled, every string uppercased)
 //
 // -- Write a function that accepts an array of objects where each object has at least one property with a numeric value, be able to return the total or average of the numeric values
