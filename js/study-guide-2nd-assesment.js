@@ -34,7 +34,7 @@ function checkType(input, feature) {
 
 
     // use an array method to modify the array
-    const myArray = [1,3,5,7,9,11];
+    let myArray = [1,3,5,7,9,11];
 
     function removeFirstElement(array) {
     array.shift();
@@ -48,16 +48,77 @@ function checkType(input, feature) {
 }
 
 // -- Write a function that takes in an array and returns the array modified in some way -- certain elements removed, certain elements modified in a regular way (example, every numerical value doubled, every string uppercased)
-//
+
+myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// removes odd from array
+function removeOdds(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {  // to show if its even
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+
+function doubleNumbers(array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 === 0) {  // to show if its even
+            newArray.push(array[i] * 2);
+        }
+    }
+    return newArray;
+}
+
+
+// important function
+function isNumber(value) {
+    return !(isNaN(value) || typeof value === "boolean" || value === null)
+}
 // -- Write a function that accepts an array of objects where each object has at least one property with a numeric value, be able to return the total or average of the numeric values
-//
+
+
+
 // -- Write a function that accepts a string, breaks down the string into components, and returns an object where each component of the string has become the value of a property
-//
+
+let cityAndState = "San Antonio, Texas";
+
+// write a function that returns {
+// city: "San Antonio"
+// State: "Texas"
+// }
+function cityStateObject(cityAndState){
+    return {
+        city: cityAndState.split(", ")[0],
+        state: cityAndState.split(", ")[1]
+    }
+}
+
+
+
 // -- Write a function that analyzes a string, returning the results of the analysis, example, return the length of the string
-//
+
+function analyzeString(string) {
+    return string.length;
+}
+
+
 // -- Write a function that analyzes a string, returning an object that contains several properties with information about the string, example, length, firstLetter, and lastLetter properties
-//
-//
+
+function analyzeString2(string) {
+    return {
+
+        length: string.length,
+        firstLetter: string.charAt(),
+        lastLetter: string.charAt(string.length - 1)
+    };
+}
+
+
+
+
 // -- Write a function that takes in a string and modifies it in some way.  Example write a function that takes in a string and replaces every instance of the letter e with the number 3, and every instance of the letter i with the number 1, and every instance of the letter o with the number 0, and a with 4.  Write a function that capitalizes every other letter in the string starting with the first letter, counting blank spaces as characters.  Try the same not counting blank spaces as characters.  Write a function that capitalizes the last letters of every word in a string.
 
     /**
