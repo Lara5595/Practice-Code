@@ -60,3 +60,87 @@ if (weather == 'rainy') {
 // conditional operators
 // ==, ====, >, <, <=, >=, !=, !==
 
+
+
+
+// Functions
+// this function call sayMyName it has 0 arguments
+// function sayMyName() {
+//   console.log('David without parameter')
+// }
+
+// sayMyName('David');
+// this function call sayMyName2 it has 1 argument called name and it logs out your name in console.
+
+function sayMyName2(name) {
+    console.log(name)
+}
+
+// sayMyName2('David');
+
+// function greeting(name) {
+//   greet = 'hi ' + name + ', Nice to meet you!'
+//   console.log(greet)
+// }
+
+// greeting('Lance');
+
+
+
+// template literals
+
+// function greeting(name) {
+//   greet = `hi ${name}, Nice to meet you!`
+//   console.log(greet)
+// }
+
+// greeting('Lance');
+
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// console.log(sum(1,2));
+
+// or if you store if you can just log
+num1 = sum(1, 2)
+console.log(num1);
+
+
+// function calculateFoodTotal(food, tip) {
+//   let tipPercentage = tip / 100
+//   let tipAmount = food * tipPercentage
+//   let  total = food + tipAmount
+//   return total
+// }
+
+// console.log(calculateFoodTotal(100,20));
+
+// or you can reuse your functions in this case its going to be sum to get the total
+// function calculateFoodTotal(food, tip) {
+//   let tipPercentage = tip / 100
+//   let tipAmount = food * tipPercentage
+//   let total = sum(food, tipAmount)
+//   return total
+// }
+
+// console.log(calculateFoodTotal(100,20));
+
+// function sum(a, b) {
+//   return a + b;
+// }
+// This ^^ is the same as the function below just in es6 version
+
+// ES6 new way to write functions Arrow functions
+// arrow function with explicit return
+// const sumArrow = (a,b) => {
+// return a + b
+// }
+
+//  shorter version is
+// arrow function with implicit return
+// IMPORTRANT: For implicit return, revome curly braces
+const sumArrow = (a, b) => a + b
+
+console.log(sumArrow(10,50));
