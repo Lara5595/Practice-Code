@@ -47,15 +47,15 @@ Math.random ex  Math.random() * 10 that will get random numbers from 1 to 9
 // if rain = "Grab your umbrella"
 // else " wear your sunglasses"
 
-let weather = prompt("How is the weather")
-
-if (weather == 'rainy') {
-    document.getElementById("output").innerHTML = "Grab your umbrella ⛱";
-} else if (weather == 'sunny') {
-    document.getElementById("output").innerHTML = "Wear Sunglasses 🌞";
-} else {
-    document.getElementById("output").innerHTML = "Please choose between sunny or rainy";
-}
+// let weather = prompt("How is the weather")
+//
+// if (weather == 'rainy') {
+//     document.getElementById("output").innerHTML = "Grab your umbrella ⛱";
+// } else if (weather == 'sunny') {
+//     document.getElementById("output").innerHTML = "Wear Sunglasses 🌞";
+// } else {
+//     document.getElementById("output").innerHTML = "Please choose between sunny or rainy";
+// }
 
 // conditional operators
 // ==, ====, >, <, <=, >=, !=, !==
@@ -72,9 +72,9 @@ if (weather == 'rainy') {
 // sayMyName('David');
 // this function call sayMyName2 it has 1 argument called name and it logs out your name in console.
 
-function sayMyName2(name) {
-    console.log(name)
-}
+// function sayMyName2(name) {
+//     console.log(name)
+// }
 
 // sayMyName2('David');
 
@@ -104,8 +104,8 @@ function sayMyName2(name) {
 // console.log(sum(1,2));
 
 // or if you store if you can just log
-num1 = sum(1, 2)
-console.log(num1);
+// num1 = sum(1, 2)
+// console.log(num1);
 
 
 // function calculateFoodTotal(food, tip) {
@@ -144,3 +144,51 @@ console.log(num1);
 const sumArrow = (a, b) => a + b
 
 console.log(sumArrow(10,50));
+
+
+// assigment from youtube
+/*
+  TODO: Write a function that sums two numbers
+  TODO: Write a function that subtracts two numbers
+  TODO: Write a function that divides two numbers.
+  TODO: Write a function that multiplies two numbers.
+  *NOTE* be sure to handle dividing by zero 😉
+  ES5 Syntax: function Add(){}
+  ES6 Syntax (Arrow function): const add = () => {}
+*/
+
+// function add(a,b){
+//     //Add function here
+//     return a+b ;
+// }
+// console.log(add(20,30));
+
+// arrow function
+let add = (a,b) => a+b;
+console.log(add(30,50));
+ // 2.
+// function sub(c,d) {
+//     return c - d;
+// }
+// arrow function
+let sub = (a,b) => a-b;
+console.log(sub(20,10));
+
+// function div(e,f){
+//     return e/f;
+// }
+let div = (a,b) => a/b;
+console.log(div(20/10));
+
+
+// function mul(a,b){
+//     return a * b;
+// }
+
+let mul = (a,b) => a*b;
+console.log(mul(20,5));
+
+console.log('hello from the SUM exercise')
+/*
+  TODO: create a function that console logs the result of any of the above operations.
+*/
