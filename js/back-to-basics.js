@@ -2,7 +2,7 @@
 // console.log('david');
 
 // Variables (var, let, const)
-let name = 'Peter pan';
+// let name = 'Peter pan';
 // console.log(name);
 
 // sentence = 'how are you doing today, nice to see you, hope you have a great day!'
@@ -36,7 +36,6 @@ Modulo/Remainder %  ex 5%2 = 1
 Add + 
 Subtract - 
 */
-
 /* Math methods
 Math.floor  ex. Math.floor(110.25) rounds Down to 110
 Math.ceil   ex. Math.ceil(110.25) rounds UP to 111
@@ -51,12 +50,13 @@ Math.random ex  Math.random() * 10 that will get random numbers from 1 to 9
 let weather = prompt("How is the weather")
 
 if (weather == 'rainy') {
-    alert("Grab your unbrella")
+    document.getElementById("output").innerHTML = "Grab your umbrella ⛱";
 } else if (weather == 'sunny') {
-    alert("Wear your sunglasses")
+    document.getElementById("output").innerHTML = "Wear Sunglasses 🌞";
 } else {
-    alert ("Please choose between sunny or rainy");
+    document.getElementById("output").innerHTML = "Please choose between sunny or rainy";
 }
 
 // conditional operators
 // ==, ====, >, <, <=, >=, !=, !==
+
