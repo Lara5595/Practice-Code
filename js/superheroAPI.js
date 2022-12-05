@@ -1,6 +1,4 @@
-// const SUPERHERO_TOKEN = SUPERHERO_TOKEN_API;
-
-const SUPERHERO_TOKEN = '10223569763528853'
+const SUPERHERO_TOKEN = SUPERHERO_TOKEN_API;
 
 const BASE_URL = `https://superheroapi.com/api.php/${SUPERHERO_TOKEN}`;
 
@@ -13,15 +11,6 @@ const searchButton = document.getElementById('searchButton')
 
 const searchInput = document.getElementById('searchInput')
 
-
-
-const newHeroButton = document.getElementById('newHeroButton')
-
-const heroImageDiv = document.getElementById('heroImage')
-
-const searchButton = document.getElementById('searchButton')
-
-const searchInput = document.getElementById('searchInput')
 
 
 // This get the random superhero
