@@ -1,7 +1,7 @@
-const SUPERHERO_TOKEN = SUPERHERO_TOKEN_API;
+// https://superheroapi.com/api/access-token/character-id
 
-const BASE_URL = `https://superheroapi.com/api.php/${SUPERHERO_TOKEN}`;
-
+const SUPERHERO_TOKEN = '10223569763528853'
+const BASE_URL = `https://superheroapi.com/api.php/${SUPERHERO_TOKEN}`
 
 const newHeroButton = document.getElementById('newHeroButton')
 
@@ -11,10 +11,7 @@ const searchButton = document.getElementById('searchButton')
 
 const searchInput = document.getElementById('searchInput')
 
-
-
-// This get the random superhero
-const getSuperHero = (id) => {
+const getSuperHero = (id, name) => {
     // name 👉 base_url/search/batman
     // json.results[0].image.url
     // id: 👉 base_url/id
@@ -28,8 +25,6 @@ const getSuperHero = (id) => {
         })
 }
 
-
-//This is so we can use emojis
 const statToEmoji = {
     intelligence: '🧠',
     strength: '💪',
@@ -39,8 +34,6 @@ const statToEmoji = {
     combat: '⚔️',
 }
 
-
-// This creates the structure and shows the heroes info
 const showHeroInfo = (character) => {
     const name = `<h2>${character.name}</h2>`
 
@@ -55,9 +48,6 @@ const showHeroInfo = (character) => {
 
 // <p>💪 Strength: ${json.powerstats.strength}</p><p>🧠 Intelligence: ${json.powerstats.intelligence}</p><p>🧠 Combat: ${json.powerstats.intelligence}</p><p>🧠 Speed: ${json.powerstats.intelligence}</p><p>🧠 Durability: ${json.powerstats.intelligence}</p>
 
-
-
-// This is so you can search by typing and only gets the first result of the array
 const getSearchSuperHero = (name) => {
     console.log(searchInput.value)
     fetch(`${BASE_URL}/search/${name}`)
@@ -68,8 +58,6 @@ const getSearchSuperHero = (name) => {
         })
 }
 
-
-// This makes it so it gets a random hero every time
 const randomHero = () => {
     const numberOfHeroes = 731
     return Math.floor(Math.random() * numberOfHeroes) + 1
@@ -79,3 +67,4 @@ newHeroButton.onclick = () => getSuperHero(randomHero())
 
 searchButton.onclick = () => getSearchSuperHero(searchInput.value)
 
+ // Need to do a book api
