@@ -68,3 +68,4 @@ newHeroButton.onclick = () => getSuperHero(randomHero())
 searchButton.onclick = () => getSearchSuperHero(searchInput.value)
 
  // Need to do a book api
+// to see if you can search through books
