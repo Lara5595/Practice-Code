@@ -68,3 +68,4 @@ newHeroButton.onclick = () => getSuperHero(randomHero())
 searchButton.onclick = () => getSearchSuperHero(searchInput.value)
 
 // need to do capstone
+// need to add controllers
