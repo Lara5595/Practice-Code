@@ -8,10 +8,10 @@ function bookSearch(){
         // Plus search adds what the user search on the search bar
         url: "https://www.googleapis.com/books/v1/volumes?q=" + search,
         dataType: "json",
-
         success: function (data) {
+            console.log(data)
             for (i = 0; i < data.items.length; i++){
-                results.innerHTML
+                results.innerHTML += "<h2>" + data.items[i].volumeInfo.title + "</h2>"
             }
         },
 
