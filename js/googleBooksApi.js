@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    var item, tile, author, publisher, bookLink, bookImg;
-    var outputList = document.getElementById("list-output");
-    var bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
-    var apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
-    var placeHldr = '<img src="https://via.placeholder.com/150">';
-    var searchData;
+    let item, title, author, publisher, bookLink, bookImg;
+    let outputList = document.getElementById("list-output");
+    let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
+    let apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
+    let placeHldr = '<img src="https://via.placeholder.com/150">';
+    let searchData;
 
     //listener for search button
     $("#search").click(function() {
@@ -75,13 +75,15 @@ $(document).ready(function() {
     }
 
     /*
-    * card element formatter using es6 backticks and templates (indivial card)
+    * card element formatter using es6 backticks and templates (individual card)
     * @param bookImg title author publisher bookLink
     * @return htmlCard
     */
+    // This is creating the cards
     function formatOutput(bookImg, title, author, publisher, bookLink, bookIsbn) {
         // console.log(title + ""+ author +" "+ publisher +" "+ bookLink+" "+ bookImg)
-        var viewUrl = 'book.html?isbn='+bookIsbn; //constructing link for bookviewer
+        var viewUrl = 'book.html?isbn='+bookIsbn; //constructing link for book viewer
+        //This creates the cards
         var htmlCard = `<div class="col-lg-6">
        <div class="card" style="">
          <div class="row no-gutters">
