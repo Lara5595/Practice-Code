@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
     // let item, title, author, publisher, bookLink, bookImg;
     let outputList = document.getElementById("list-output");
     let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
@@ -108,6 +108,6 @@ $(document).ready(function() {
         alert("search term can not be empty!")
     }
 
-});
+// });
 
 // Need to make read a book work
