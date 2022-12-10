@@ -12,12 +12,12 @@
             var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
             var index = document.URL.indexOf('?');
             if (index > 0) {
-                var bookIsbn = document.URL.substring(index, document.URL.length).split("=")[1]
+                let bookIsbn = document.URL.substring(index, document.URL.length).split("=")[1]
                 console.log(bookIsbn);
             }
-            //viewer.load('ISBN:0738531367'); //for test purpose
+            viewer.load('ISBN:0738531367'); //for test purpose
 
-            viewer.load('ISBN:'+bookIsbn);
+            // viewer.load('ISBN:'+bookIsbn);
         }
         google.books.setOnLoadCallback(initialize);
     </script>
