@@ -8,14 +8,6 @@
     <script type="text/javascript">
         google.books.load();
 
-        function nextStep(viewer) {
-            window.setTimeout(function() {
-                viewer.nextPage();
-                nextStep(viewer);
-            }, 3000);
-        }
-
-
         function initialize() {
             var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
             var index = document.URL.indexOf('?');
