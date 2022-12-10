@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    let item, title, author, publisher, bookLink, bookImg;
+    // let item, title, author, publisher, bookLink, bookImg;
     let outputList = document.getElementById("list-output");
     let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
-    let apiKey = "key=AIzaSyDtXC7kb6a7xKJdm_Le6_BYoY5biz6s8Lw";
     let placeHldr = '<img src="https://via.placeholder.com/150">';
     let searchData;
 
@@ -37,7 +36,7 @@ $(document).ready(function() {
                 }
             });
         }
-        $("#search-box").val(""); //clearn search box
+        $("#search-box").val(""); //clean search box
     });
 
     /*
@@ -110,3 +109,5 @@ $(document).ready(function() {
     }
 
 });
+
+// Need to make read a book work
