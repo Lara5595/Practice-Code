@@ -8,7 +8,7 @@
     //listener for search button
     $("#search").click(function() {
         outputList.innerHTML = ""; //empty html output
-        document.body.style.backgroundImage = "url('')";
+        document.body.style.backgroundImage = "url()";
         searchData = $("#search-box").val();
         //handling empty search input field
         if(searchData === "" || searchData === null) {
