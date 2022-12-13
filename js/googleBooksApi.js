@@ -1,9 +1,14 @@
-// $(document).ready(function() {
+$(document).ready(function() {
     // let item, title, author, publisher, bookLink, bookImg;
     let outputList = document.getElementById("list-output");
     let bookUrl = "https://www.googleapis.com/books/v1/volumes?q=";
     let placeHldr = '<img src="https://via.placeholder.com/150">';
     let searchData;
+
+    //handling error for empty search box
+    function displayError() {
+        alert("search term can not be empty!")
+    }
 
     //listener for search button
     $("#search").click(function() {
@@ -46,12 +51,13 @@
 
     // This displays the results and we are doing += 2 since we are displaying 2 books
     function displayResults(response) {
-        for (var i = 0; i < response.items.length; i+=2) {
+        for (let i = 0; i < response.items.length; i+=2) {
             item = response.items[i];
             title1 = item.volumeInfo.title;
             author1 = item.volumeInfo.authors;
             publisher1 = item.volumeInfo.publisher;
             bookLink1 = item.volumeInfo.previewLink;
+            console.log("changes on line 60")
             bookIsbn = item.volumeInfo.industryIdentifiers[1].identifier
             bookImg1 = (item.volumeInfo.imageLinks) ? item.volumeInfo.imageLinks.thumbnail : placeHldr ;
 
@@ -81,9 +87,12 @@
     // This is creating the cards
     function formatOutput(bookImg, title, author, publisher, bookLink, bookIsbn) {
         // console.log(title + ""+ author +" "+ publisher +" "+ bookLink+" "+ bookImg)
-        var viewUrl = 'book.html?isbn='+bookIsbn; //constructing link for book viewer
+
+        // (BAD) http://localhost:63342/Practice-Code/bookView.html?isbn=9780131872486
+        // (GOOD) http://localhost:63342/Practice-Code/bookView.html?_ijt=9780991229048=RELOAD_ON_SAVE
+        let viewUrl = 'bookView.html?isbn='+bookIsbn; //constructing link for book viewer
         //This creates the cards
-        var htmlCard = `<div class="col-lg-6">
+        let htmlCard = `<div class="col-lg-6">
        <div class="card" style="">
          <div class="row no-gutters">
            <div class="col-md-4">
@@ -103,11 +112,8 @@
         return htmlCard;
     }
 
-    //handling error for empty search box
-    function displayError() {
-        alert("search term can not be empty!")
-    }
 
-// });
+
+});
 
 // Need to make read a book work
