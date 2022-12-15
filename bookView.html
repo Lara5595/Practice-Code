@@ -18,7 +18,7 @@
 <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
 <script type="text/javascript">
     google.books.load();
-
+    console.log(google.books);
     function initialize() {
         let viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
         let index = document.URL.indexOf('?');
